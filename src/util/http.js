@@ -1,5 +1,5 @@
 
-const baseUrl = 'http://localhost:9000'
+const baseUrl = 'http://10.129.235.5:9000'
 
 const headers = new Headers({ 'Content-Type': 'application/json' })
 
@@ -9,7 +9,7 @@ const fetchPromise = (url, method, params) =>
             method: method,
             headers: headers,
             body: JSON.stringify(params)
-        }).then(response => response.json)
+        }).then(response => response.json())
             .then(response => response.flag ? resolve(response) : reject(response))
     })
 

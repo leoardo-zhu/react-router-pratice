@@ -1,24 +1,11 @@
 header {
-    height: 30px;
+    height: 40px;
+    padding: 10px 0;
+    padding-left: 10px;
     line-height: 30px;
     font-size: 12px;
-    margin-bottom: 30px;
-    position: relative;
-
-    .header-container {
-        position: relative;
-        width: 1100px;
-        margin: 0 auto;
-
-        a {
-            color: #8f8c8f;
-            text-decoration: none;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
+    margin: 15px 0;
+    background-color: #fff;
 }
 
 .content {
@@ -27,30 +14,8 @@ header {
 
     .left-menu {
         float: left;
-        width: 12%;
-
-        ul {
-
-            // background-color: #fff;
-            li {
-                text-align: center;
-
-                .active {
-                    @extend a;
-                    color: #fff !important;
-                    background: #e64620;
-                }
-
-                a {
-                    padding: 6px 16px;
-                    color: #666;
-                    line-height: 40px;
-                    display: block;
-                    border-radius: 7px;
-                    text-decoration: none;
-                }
-            }
-        }
+        width: 15%;
+   
     }
 
     .right-info {
